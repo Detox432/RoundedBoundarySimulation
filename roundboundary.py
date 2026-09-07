@@ -3,7 +3,7 @@ import pygame
 import math
 pygame.init()
 
-n = int(input({f"Enter the number of balls you want: "}))
+n = int(input("Enter the number of balls you want: "))
 W, H = 600, 600
 screen = pygame.display.set_mode((W, H))
 clock = pygame.time.Clock()
