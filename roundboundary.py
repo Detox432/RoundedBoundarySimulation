@@ -25,7 +25,6 @@ while running:
     pos+= vel*dt
     pos_b = np.tile(pos, (n, 1, 1))
     center_vectors = pos_b - pos_b.transpose(1,0,2)
-    print(pos)
             
     center_vectors_magnitude = np.linalg.norm(center_vectors,axis=2)    
     isColliding = center_vectors_magnitude < 2*r
